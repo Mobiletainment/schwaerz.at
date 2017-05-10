@@ -1,6 +1,7 @@
 # Schwaerz.At
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+## What is it?
+A minimalistic website built with Angular using the [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
 ## Development server
 
@@ -24,5 +25,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+------------
+* Contact the author at david@pertiller.net
+* Have a look at the [author's website](https://www.pertiller.net)
