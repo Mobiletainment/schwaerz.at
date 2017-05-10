@@ -68,7 +68,8 @@ body {
 }
 
 p {
-  margin-bottom: 0;
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -468,4 +469,8 @@ footer {
   width: 100%;
   text-align: center;
   background: $black3;
+}
+
+.wrapper {
+  margin: 10px;
 }
