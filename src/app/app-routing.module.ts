@@ -6,8 +6,7 @@ import { ImprintComponent } from "./imprint/imprint.component";
 
 const routes: Routes = [
   { path: "imprint", component: ImprintComponent },
-  { path: "welcome", component: WelcomeComponent },
-  { path: "", redirectTo: "welcome", pathMatch: "full" },
+  { path: "", component: WelcomeComponent },
   { path: "**", component: PageNotFoundComponent }
 ];
 

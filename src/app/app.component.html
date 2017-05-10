@@ -1,13 +1,16 @@
 <div class="wrapper">
    
-  <div class="brand">
-    <a href="/"><img src="assets/img/logo.jpg" class="img-responsive" alt="Fritz Schwärz"></a>
-  </div>
+  <div class="flex-container space-between" style="align-items: flex-start">
 
-  <div id="navbar-mobile">
-    <div class="navbar navbar-right">
+    <a class="brand" href="/">
+      <img src="assets/img/logo.jpg" class="img-responsive" alt="Fritz Schwärz">
+      <div class="tagline accent">Fritz Schwärz senior</div>
+
+    </a>
+
+    <div class="navbar">
       <ul>
-        <li><a [routerLink]="['/welcome']">Home</a></li>
+        <li><a [routerLink]="['/']">Home</a></li>
         <li><a [routerLink]="['/imprint']">Impressum</a></li>
         <li><a [routerLink]="['/contact']">Kontakt</a></li>
       </ul>
