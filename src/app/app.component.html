@@ -1,6 +1,6 @@
 <div class="wrapper">
    
-  <div class="flex-container space-between" style="align-items: flex-start">
+  <div class="flex-container space-between">
 
     <a class="brand" href="/">
       <img src="./assets/img/logo.jpg" class="img-responsive" alt="Fritz Schwärz">
@@ -9,7 +9,7 @@
     </a>
 
     <div class="navbar">
-      <ul>
+      <ul class="flex-container wrap">
         <li><a [routerLink]="['/']" routerLinkActive="active accent" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
         <li><a [routerLink]="['/imprint']" routerLinkActive="active accent">Impressum</a></li>
         <li><a [routerLink]="['/contact']" routerLinkActive="active accent">Kontakt</a></li>

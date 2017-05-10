@@ -656,6 +656,10 @@ footer {
   &.column {
     @include flex-direction(column);
   }
+
+  &.wrap {
+    @include flex-wrap(wrap);
+  }
 }
 
 .flex {
