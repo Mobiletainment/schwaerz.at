@@ -1,1 +1,471 @@
-/* You can add global styles to this file, and also import other style files */
+$white: #fff;
+$grey: #f7f7f7;
+$grey2: #aeb9c1;
+$grey3: #757575;
+$grey4: #444444;
+$grey5: #9a9a9a;
+$grey6: #d7d7d7;
+$black: #0e0e0e;
+$black2: #111215;
+$black3: #313131;
+$black4: #3b434a;
+$blue: #5B8EFB;
+$blue2: #0b102a;
+$purple: #8b41c4;
+$purple2: #642f8d;
+$purple3: #200838;
+$green: #23c77b;
+$green2: #157a4b;
+$red: #f9223e;
+$red2: #d21d34;
+$pink: #ff3366;
+$pink2: #bc254b;
+$yellow: #f;
+$yellow: #ffcc00;
+
+
+/*
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Common Styles & Initials
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1200px) and (max-width: 2000px) {
+  .container{
+    width: 80%;
+  }
+}
+
+@media (min-width: 2001px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: $grey2;
+}
+
+.background_page {
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: calc(100vh + 110px);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*Buttons*/
+.btn {
+  border-radius: 150px;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-big {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn:hover {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-white {
+  border: solid 2px #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.btn-white:hover {
+  border: solid 2px #fff;
+  background: #fff;
+  color: $black4 !important;
+}
+
+.btn-dark {
+  border: solid 2px #000;
+  background: transparent;
+  color: $black4;
+}
+
+.btn-dark:hover {
+  border: solid 2px #000;
+  background: #000;
+  color: #fff !important;
+}
+
+.btn-color {
+  border: solid 2px;
+  background: transparent;
+}
+
+.btn-color:hover {
+  border: solid 2px;
+  color: #fff;
+}
+
+.heading_big {
+  font-size: 124px;
+  line-height: 124px;
+  letter-spacing: 4px;
+}
+
+.heading_46 {
+  font-size: 46px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.heading_42 {
+  font-size: 42px;
+  line-height: 1.5;
+}
+
+.heading_24 {
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.heading_18 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.font_light {
+  font-weight: 200;
+}
+.font_bold {
+  font-weight: 700;
+}
+.font_normal {
+  text-transform: inherit !important;
+}
+
+.accent {
+  display: inline-block;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: $white;
+  }
+}
+
+.color_white {
+  color: $white !important;
+}
+.color_black {
+  color: $black2 !important;
+}
+
+.color_grey {
+  color: $grey !important;
+}
+
+.color_grey2 {
+  color: $grey2 !important;
+}
+
+.color_grey3 {
+  color: $grey3 !important;
+}
+
+.color_blue {
+  color: $blue !important;
+}
+
+.color_blue2 {
+  color: $blue2 !important;
+}
+
+.color_red {
+  color: $red !important;
+}
+
+.color_green {
+  color: $green !important;
+}
+
+.color_purple {
+  color: $purple !important;
+}
+
+.color_purple2 {
+  color: $purple2 !important;
+}
+
+.color_purple3 {
+  color: $purple3 !important;
+}
+
+.color_yellow {
+  color: $yellow !important;
+}
+
+.color_green {
+  color: $green !important;
+}
+
+.color_pink {
+  color: $pink !important;
+}
+
+.color_purple_blue {
+  background-image: linear-gradient(to right bottom, $purple, $blue) !important;
+  color: transparent !important;
+  -webkit-background-clip: text;
+}
+
+.color_red_purple {
+  background-image: linear-gradient(to right bottom, $red, $purple) !important;
+  color: transparent !important;
+  -webkit-background-clip: text;
+}
+
+.color_red_blue {
+  background-image: linear-gradient(to right bottom, $red, $blue) !important;
+  color: transparent !important;
+  -webkit-background-clip: text;
+}
+
+.color_purple_purple3 {
+  background-image: linear-gradient(to right bottom, $purple, $purple3) !important;
+  color: transparent !important;
+  -webkit-background-clip: text;
+}
+
+.color_green_blue {
+  background-image: linear-gradient(to right bottom, $green, $blue) !important;
+  color: transparent !important;
+  -webkit-background-clip: text;
+}
+
+.background_white {
+  background: $white !important;
+}
+
+.background_blue2 {
+  background: $blue2 !important;
+}
+
+.background_green {
+  background: $green !important;
+}
+
+.background_yellow {
+  background: $yellow !important;
+}
+
+.background_blue {
+  background: $blue !important;
+  &.btn:hover {
+    background: $blue2 !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_red {
+  background: $red !important;
+  &.btn:hover {
+    background: $red2 !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_green {
+  background: $green !important;
+  &.btn:hover {
+    background: $green2 !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_purple {
+  background: $purple !important;
+  &.btn:hover {
+    background: $purple2 !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_purple2 {
+  background: $purple2 !important;
+  &.btn:hover {
+    background: $purple3 !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_purple3 {
+  background: $purple3 !important;
+  &.btn:hover {
+    background: $purple2 !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_purple_blue {
+  background: linear-gradient(to right bottom, $purple, $blue) !important;
+  &.btn:hover {
+    background: linear-gradient(to right bottom, $purple2, $blue2) !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_red_purple {
+  background: linear-gradient(to right bottom, $red, $purple) !important;
+  &.btn:hover {
+    background: linear-gradient(to right bottom, $red2, $purple2) !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_red_blue {
+  background: linear-gradient(to right bottom, $red, $blue) !important;
+  &.btn:hover {
+    background: linear-gradient(to right bottom, $red2, $blue2) !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_purple_purple3 {
+  background: linear-gradient(to right bottom, $purple2, $purple3) !important;
+  &.btn:hover {
+    background: linear-gradient(to right bottom, $purple3, $purple3) !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+.background_green_blue {
+  background: linear-gradient(to right bottom, $green, $blue) !important;
+  &.btn:hover {
+    background: linear-gradient(to right bottom, $green2, $blue2) !important;
+    box-shadow: 0 5px 55px -5px $black;
+    transition: 0.5s;
+  }
+}
+
+hr {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border: 0;
+  border-top: 1px solid $grey;
+  width: 100%;
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.space {
+  width: 100%;
+  height: 5vh;
+  display: inline-flex;
+}
+
+.space2 {
+  width: 100%;
+  height: 10vh;
+  display: inline-flex;
+}
+
+.navbar {
+  margin: 0;
+  height: 100px;
+  ul {
+    display: inline-flex;
+    li {
+      height: 30px;
+      margin: 35px 10px;
+      a {
+        color: $white;
+        letter-spacing: 1px;
+        transition: 0.5s;
+        &:hover {
+          opacity: 0.5;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  font-size: 12px;
+  color: $white;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background: $black3;
+}
