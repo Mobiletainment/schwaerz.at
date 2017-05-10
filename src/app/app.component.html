@@ -10,9 +10,9 @@
 
     <div class="navbar">
       <ul>
-        <li><a [routerLink]="['/']">Home</a></li>
-        <li><a [routerLink]="['/imprint']">Impressum</a></li>
-        <li><a [routerLink]="['/contact']">Kontakt</a></li>
+        <li><a [routerLink]="['/']" routerLinkActive="active accent" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+        <li><a [routerLink]="['/imprint']" routerLinkActive="active accent">Impressum</a></li>
+        <li><a [routerLink]="['/contact']" routerLinkActive="active accent">Kontakt</a></li>
       </ul>
     </div>
   </div>

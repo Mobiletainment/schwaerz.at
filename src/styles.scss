@@ -591,10 +591,9 @@ ul {
         transition: 0.5s;
         opacity: 0.7;
 
-        &:hover, &:active, &.active-link {
+        &:hover, &:active, &.active {
           opacity: 1;
           transition: 0.5s;
-          text-decoration: underline;
         }
       }
     }
