@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { WelcomeComponent } from "./welcome/welcome.component";
+import { HomeComponent } from "./home/home.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { ImprintComponent } from "./imprint/imprint.component";
 import { ContactComponent } from "./contact/contact.component";
@@ -12,7 +12,7 @@ import { ContactComponent } from "./contact/contact.component";
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
+    HomeComponent,
     PageNotFoundComponent,
     ImprintComponent,
     ContactComponent

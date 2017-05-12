@@ -23,7 +23,11 @@ $pink2: #bc254b;
 $yellow: #f;
 $yellow: #ffcc00;
 
+$background: #3c4d78;
+
 $font-size: 14px;
+
+@import "../node_modules/normalize.css/normalize.css";
 
 /*
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -201,6 +205,7 @@ body {
   line-height: 1.6;
   font-weight: 300;
   color: $grey6;
+  background-color: $background;
 
   min-height: 100vh;
 }
@@ -568,6 +573,10 @@ hr {
   border: 0;
   border-top: 1px solid $grey;
   width: 100%;
+  display: inline-block;
+}
+
+.inline-block {
   display: inline-block;
 }
 
