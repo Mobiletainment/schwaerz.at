@@ -213,6 +213,10 @@ p {
   margin-top: 0;
 }
 
+.m-t-md {
+  margin-top: 15px;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -611,6 +615,7 @@ footer {
   position: relative;
   width: 100%;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .wrapper {
