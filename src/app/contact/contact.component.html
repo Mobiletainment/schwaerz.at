@@ -1,29 +1,29 @@
 <span>Hier haben Sie die Möglichkeit, mir eine Nachricht zukommen zu lassen:</span>
 
-<form [formGroup]="contactForm" (ngSubmit)="send()">
+<form id="contact-form" [formGroup]="contactForm" (ngSubmit)="send()">
 
   <fieldset>
     <div class="form-group">
       <label for="contactName">Ihr Name:</label>
-      <input type="text" id="contactName" placeholder="Ihr Name" formControlName="name">
+      <input type="text" id="contactName" placeholder="Ihr Name" formControlName="name" class="form-control">
     </div>
 
 
     <div class="form-group">
       <label for="email">Ihre E-Mail:</label>
-      <input type="email" id="email" placeholder="Ihre E-Mail" formControlName="email">
+      <input type="email" id="email" placeholder="Ihre E-Mail" formControlName="email" class="form-control">
     </div>
 
     <div class="form-group">
       <label for="subject">Betreff:</label>
-      <input type="text" id="subject" placeholder="Betreff" formControlName="subject">
+      <input type="text" id="subject" placeholder="Betreff" formControlName="subject" class="form-control">
     </div>
 
     <div class="form-group">
       <label for="body">Nachricht:</label>
-      <textarea id="body" rows="5" placeholder="Nachricht" formControlName="body"></textarea>
+      <textarea id="body" rows="5" placeholder="Nachricht" formControlName="body" class="form-control"></textarea>
     </div>
   </fieldset>
 
-  <button class="btn btn-white" type="submit">Senden</button>
+  <button class="btn btn-white m-t-md" type="submit">Senden</button>
 </form>

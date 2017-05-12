@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { FormGroup, FormBuilder } from "@angular/forms";
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import { Contact } from "./contact";
 
 @Component({
@@ -19,8 +19,8 @@ export class ContactComponent implements OnInit {
 
     this.contactForm = this.fb.group({
       name: "",
-      email: "",
-      subject: "",
+      email: ["", Validators.email],
+      subject: ["", [Validators.required, Validators.minLength(3)]],
       body: ""
     });
   }
