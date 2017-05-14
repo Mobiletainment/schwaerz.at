@@ -8,6 +8,7 @@ import { HomeComponent } from "./home/home.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { ImprintComponent } from "./imprint/imprint.component";
 import { ContactComponent } from "./contact/contact.component";
+import { ContactService } from "./contact/contact.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { ContactComponent } from "./contact/contact.component";
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

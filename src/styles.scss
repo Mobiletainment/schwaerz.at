@@ -18,6 +18,7 @@ $green: #23c77b;
 $green2: #157a4b;
 $red: #f9223e;
 $red2: #d21d34;
+$error: #ff7789;
 $pink: #ff3366;
 $pink2: #bc254b;
 $yellow: #f;
@@ -26,6 +27,7 @@ $yellow: #ffcc00;
 $background: #3c4d78;
 
 $font-size: 14px;
+$font-size-smaller: 12px;
 
 @import "../node_modules/normalize.css/normalize.css";
 
@@ -35,10 +37,18 @@ Mixins
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @mixin placeholder {
-  &::-webkit-input-placeholder {@content}
-  &:-moz-placeholder           {@content}
-  &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &:-ms-input-placeholder {
+    @content
+  }
 }
 
 // Flexbox display
@@ -188,7 +198,7 @@ html, body {
 }
 
 @media (min-width: 1200px) and (max-width: 2000px) {
-  .container{
+  .container {
     width: 80%;
   }
 }
@@ -230,7 +240,11 @@ p {
   margin-top: 15px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+.m-b-md {
+  margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -342,9 +356,11 @@ a:focus {
 .font_light {
   font-weight: 200;
 }
+
 .font_bold {
   font-weight: 700;
 }
+
 .font_normal {
   text-transform: inherit !important;
 }
@@ -366,6 +382,7 @@ a:focus {
 .color_white {
   color: $white !important;
 }
+
 .color_black {
   color: $black2 !important;
 }
@@ -645,7 +662,6 @@ footer {
   @include flex-shrink(0);
   width: 132px;
 
-
   img {
     width: 132px;
     margin-bottom: -5px;
@@ -692,14 +708,17 @@ footer {
   @include flex-grow(1);
 }
 
-
 // ----------------------------------------------------------------------------------------------------------------
 // Contact
 // ----------------------------------------------------------------------------------------------------------------
 
-
 #contact-form {
-  margin-top: 2%;
+  margin: 1% -10px;
+  //background-color: rgba(0,0,0, 0.5);
+
+  fieldset {
+    border: none;
+  }
 
   .form-group {
 
@@ -715,7 +734,7 @@ footer {
     .form-control {
       font-size: $font-size;
       border: solid $grey2;
-      border-width: 0 0 1px 0;
+      border-width: 0px 1px 1px 0px;
       border-radius: 0;
       box-shadow: none;
       line-height: 30px;
@@ -736,12 +755,33 @@ footer {
       @include placeholder {
         color: $grey2;
       }
+
     }
 
+
+
     textarea {
-      min-height: 120px !important;
-      resize: none;
+      min-height: 45px;
+      line-height: 1.15 !important;
+      resize: vertical;
+    }
+
+    div {
+      width: 100%;
     }
   }
 
+  .has-error {
+    .form-control {
+      border-color: $error;
+    }
+  }
+
+}
+
+.help-block {
+  color: $error;
+  font-weight: bolder;
+  font-size: $font-size-smaller;
+  border-top: 2px solid $error;
 }

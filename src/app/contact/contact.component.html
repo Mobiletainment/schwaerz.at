@@ -1,29 +1,49 @@
-<span>Hier haben Sie die Möglichkeit, mir eine Nachricht zukommen zu lassen:</span>
+<div [hidden]="submitted && result">
 
-<form id="contact-form" [formGroup]="contactForm" (ngSubmit)="send()">
+  <span>Hier haben Sie die Möglichkeit, mir eine Nachricht zukommen zu lassen:</span>
 
-  <fieldset>
-    <div class="form-group">
-      <label for="contactName">Ihr Name:</label>
-      <input type="text" id="contactName" placeholder="Ihr Name" formControlName="name" class="form-control">
-    </div>
+  <form id="contact-form" [formGroup]="contactForm" (ngSubmit)="send()">
+
+    <fieldset>
+      <div class="form-group">
+        <label for="contactName">Ihr Name:</label>
+        <input type="text" id="contactName" placeholder="Ihr Name" formControlName="name" class="form-control">
+      </div>
 
 
-    <div class="form-group">
-      <label for="email">Ihre E-Mail:</label>
-      <input type="email" id="email" placeholder="Ihre E-Mail" formControlName="email" class="form-control">
-    </div>
+      <div class="form-group" [ngClass]="{'has-error': submitted && contactForm.get('email').errors}">
+        <label for="email">Ihre E-Mail:</label>
+        <div class="input-block">
+          <input type="email" id="email" placeholder="Ihre E-Mail" formControlName="email" class="form-control">
+          <div class="help-block" [hidden]="!submitted || contactForm.get('email').valid">Bitte geben Sie eine gültige E-Mail Adresse an</div>
 
-    <div class="form-group">
-      <label for="subject">Betreff:</label>
-      <input type="text" id="subject" placeholder="Betreff" formControlName="subject" class="form-control">
-    </div>
+        </div>
+      </div>
 
-    <div class="form-group">
-      <label for="body">Nachricht:</label>
-      <textarea id="body" rows="5" placeholder="Nachricht" formControlName="body" class="form-control"></textarea>
-    </div>
-  </fieldset>
+      <div class="form-group" [ngClass]="{'has-error': submitted && contactForm.get('message').errors}">
+        <label for="message">Nachricht:</label>
+        <div class="input-block">
+          <textarea type="text" id="message" placeholder="Nachricht" formControlName="message" class="form-control"></textarea>
+          <div class="help-block" [hidden]="!submitted || !contactForm.get('message').errors">Bitte geben Sie eine Nachricht ein (min. 3 Zeichen)</div>
+        </div>
+      </div>
 
-  <button class="btn btn-white m-t-md" type="submit">Senden</button>
-</form>
+    </fieldset>
+
+    <button class="btn btn-white m-t-md m-b-md" type="submit">Senden</button>
+  </form>
+</div>
+
+<div *ngIf="submitted && result">
+
+  <div *ngIf="result === true">
+    <h3 class="color_green">Die Nachricht wurde erfolgreich versendet.</h3>
+    <h3>Vielen Dank für Ihre Kontaktaufnahme!</h3>
+  </div>
+
+  <div *ngIf="result !== true">
+    <h3 class="color_red">Beim Versenden ist leider ein Problem aufgetreten.</h3>
+    <h3>Versuchen Sie es bitte später noch einmal. Ich entschuldige mich für die Umstände!</h3>
+  </div>
+
+</div>
