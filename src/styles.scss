@@ -24,7 +24,7 @@ $pink2: #bc254b;
 $yellow: #f;
 $yellow: #ffcc00;
 
-$background: #3c4d78;
+$background: #1f1c13;
 
 $font-size: 14px;
 $font-size-smaller: 12px;
@@ -639,10 +639,10 @@ ul {
 }
 
 .copyright {
-  font-size: 12px;
+  font-size: $font-size - 1px;
   color: $white;
   padding: 10px 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 footer {
