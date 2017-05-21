@@ -1,10 +1,10 @@
-import { Schwaerz.AtPage } from './app.po';
+import { SchwaerzAtPage } from './app.po';
 
 describe('schwaerz.at App', () => {
-  let page: Schwaerz.AtPage;
+  let page: SchwaerzAtPage;
 
   beforeEach(() => {
-    page = new Schwaerz.AtPage();
+    page = new SchwaerzAtPage();
   });
 
   it('should display message saying app works', () => {

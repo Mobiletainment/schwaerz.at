@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class Schwaerz.AtPage {
+export class SchwaerzAtPage {
   navigateTo() {
     return browser.get('/');
   }

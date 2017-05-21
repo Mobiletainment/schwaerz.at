@@ -1,4 +1,4 @@
-<div [hidden]="submitted && result">
+<div *ngIf="!submitted && result === null">
 
   <span>Hier haben Sie die Möglichkeit, mir eine Nachricht zukommen zu lassen:</span>
 
@@ -28,13 +28,14 @@
         </div>
       </div>
 
+      <button class="btn btn-white m-t-md m-b-md" type="submit">Senden</button>
+
     </fieldset>
 
-    <button class="btn btn-white m-t-md m-b-md" type="submit">Senden</button>
   </form>
 </div>
 
-<div *ngIf="submitted && result">
+<div *ngIf="submitted && result !== null">
 
   <div *ngIf="result === true">
     <h3 class="color_green">Die Nachricht wurde erfolgreich versendet.</h3>

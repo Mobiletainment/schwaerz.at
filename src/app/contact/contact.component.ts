@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
   contact: Contact = new Contact();
 
   submitted: boolean = false;
-  result: string | boolean = false;
+  result: null | boolean = null;
 
   constructor(private fb: FormBuilder, private contactService: ContactService) {
   }
@@ -34,8 +34,10 @@ export class ContactComponent implements OnInit {
     if (!this.contactForm.valid)
       return;
 
+    this.contact = {...this.contactForm.value}; // apply form model to contact model
+
     this.contactService.sendMessage(this.contact).subscribe(result => {
-      this.result = true;
+      this.result = result;
     }, error => {
       this.result = error;
     });
