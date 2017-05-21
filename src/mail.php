@@ -2,7 +2,7 @@
 
 // configure
 $from = 'Schwärz.at [Website] <kontakt@schwaerz.at>';
-$sendTo = 'David Pertiller <david@pertiller.net>';
+$sendTo = 'Fritz Schwärz <fritz@schwaerz.at>';
 $subject = 'Kontaktformular';
 $fields = array('name' => 'Von', 'email' => 'Email', 'message' => 'Nachricht');
 $okMessage = 'submitted';
@@ -28,7 +28,7 @@ try
         throw new Exception('Missing contact information');
     }
 
-    $emailText = 'Es wurde eine neue Nachricht gesendet:<br>' . nl2br($emailText);
+    $emailText = 'Es wurde eine neue Nachricht gesendet:<br><br>' . nl2br($emailText);
 
     $headers = array('Content-Type: text/html; charset="UTF-8";',
         'From: ' . $from,
