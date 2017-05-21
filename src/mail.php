@@ -10,7 +10,7 @@ $errorMessage = 'error';
 
 $data = json_decode(file_get_contents('php://input'), true);
 
-$replyTo = $data['name'];
+$replyTo = $data['email'];
 
 
 // let's do the sending
