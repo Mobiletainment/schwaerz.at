@@ -28,7 +28,7 @@ try
         throw new Exception('Missing contact information');
     }
 
-    $emailText = 'Es wurde eine neue Nachricht gesendet:<br>' . $emailText;
+    $emailText = 'Es wurde eine neue Nachricht gesendet:<br>' . nl2br($emailText);
 
     $headers = array('Content-Type: text/html; charset="UTF-8";',
         'From: ' . $from,
