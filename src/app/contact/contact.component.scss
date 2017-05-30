@@ -1,0 +1,73 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+// ----------------------------------------------------------------------------------------------------------------
+// Contact
+// ----------------------------------------------------------------------------------------------------------------
+
+#contact-form {
+  margin: 1% -10px;
+  //background-color: rgba(0,0,0, 0.5);
+
+  fieldset {
+    border: none;
+  }
+
+  .form-group {
+
+    @include flexbox();
+    @include align-items(baseline);
+
+    label {
+      @include flex-shrink(0);
+      margin-right: 15px;
+      @include flex-basis(90px);
+    }
+
+    .form-control {
+      font-size: $font-size;
+      border: solid $grey2;
+      border-width: 0px 1px 1px 0px;
+      border-radius: 0;
+      box-shadow: none;
+      line-height: 30px;
+      height: 30px;
+      width: 100%;
+      background: none;
+      color: $grey;
+      background: rgba(0, 0, 0, 0);
+      display: block;
+      margin: 5% 0 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      transform: translateX(0);
+      font-weight: lighter;
+      font-style: italic;
+
+      @include placeholder {
+        color: $grey2;
+      }
+
+    }
+
+
+
+    textarea {
+      min-height: 45px;
+      line-height: 1.15 !important;
+      resize: vertical;
+    }
+
+    div {
+      width: 100%;
+    }
+  }
+
+  .has-error {
+    .form-control {
+      border-color: $error;
+    }
+  }
+
+}
