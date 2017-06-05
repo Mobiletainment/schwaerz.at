@@ -5,7 +5,7 @@ export class SchwaerzAtPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getBrand() {
+    return element(by.css('app-root .brand'));
   }
 }

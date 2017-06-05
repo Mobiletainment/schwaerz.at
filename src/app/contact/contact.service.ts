@@ -4,7 +4,6 @@ import { Observable } from "rxjs/Observable";
 import { Http, RequestOptions, Headers } from "@angular/http";
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/do";
-
 @Injectable()
 export class ContactService {
 
