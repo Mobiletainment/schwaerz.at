@@ -1,8 +1,8 @@
 <?php
 
 // configure
-$from = 'Schwärz.at [Website] <kontakt@schwaerz.at>';
-$sendTo = 'Fritz Schwärz <fritz@schwaerz.at>';
+$from = 'Schwärz.at [Website] <website@schwaerz.at>';
+$sendTo = 'Fritz Schwärz <kontakt@schwaerz.at>';
 $subject = 'Kontaktformular';
 $fields = array('name' => 'Von', 'email' => 'Email', 'message' => 'Nachricht');
 $okMessage = 'submitted';

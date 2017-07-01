@@ -7,7 +7,7 @@ import "rxjs/add/operator/do";
 @Injectable()
 export class ContactService {
 
-  private baseUrl = "mail.php";
+  private baseUrl = "assets/mail.php";
 
   constructor(private http: Http) {
   }
