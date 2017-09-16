@@ -2,36 +2,31 @@
 
   <span>Hier haben Sie die Möglichkeit, mir eine Nachricht zukommen zu lassen:</span>
 
-  <form id="contact-form" [formGroup]="contactForm" (ngSubmit)="send()">
-
-    <fieldset>
-      <div class="form-group">
-        <label for="contactName">Ihr Name:</label>
-        <input type="text" id="contactName" placeholder="Ihr Name" formControlName="name" class="form-control">
-      </div>
-
-
-      <div class="form-group" [ngClass]="{'has-error': submitted && contactForm.get('email').errors}">
-        <label for="email">Ihre E-Mail:</label>
-        <div class="input-block">
-          <input type="email" id="email" placeholder="Ihre E-Mail" formControlName="email" class="form-control">
-          <div class="help-block" [hidden]="!submitted || contactForm.get('email').valid">Bitte geben Sie eine gültige E-Mail Adresse an</div>
-
+  <form id="contact-form" #form="ngForm" [formGroup]="contactForm" (ngSubmit)="send(form)" novalidate>
+        <div class="form-group">
+          <label for="contactName">Ihr Name:</label>
+          <input type="text" id="contactName" placeholder="Ihr Name" formControlName="name" class="form-control">
         </div>
-      </div>
 
-      <div class="form-group" [ngClass]="{'has-error': submitted && contactForm.get('message').errors}">
-        <label for="message">Nachricht:</label>
-        <div class="input-block">
-          <textarea type="text" id="message" placeholder="Nachricht" formControlName="message" class="form-control"></textarea>
-          <div class="help-block" [hidden]="!submitted || !contactForm.get('message').errors">Bitte geben Sie eine Nachricht ein (min. 3 Zeichen)</div>
+
+        <div class="form-group" [ngClass]="{'has-error': submitted && contactForm.controls['email'].errors}">
+          <label for="email">Ihre E-Mail:</label>
+          <div class="input-block">
+            <input type="email" id="email" placeholder="Ihre E-Mail" formControlName="email" class="form-control">
+            <div class="help-block" [hidden]="!submitted || !contactForm.controls['email'].errors">Bitte geben Sie eine gültige E-Mail Adresse an</div>
+
+          </div>
         </div>
-      </div>
 
-      <button class="btn btn-white m-t-md m-b-md" type="submit">Senden</button>
+        <div class="form-group" [ngClass]="{'has-error': submitted && contactForm.controls['message'].errors}">
+          <label for="message">Nachricht:</label>
+          <div class="input-block">
+            <textarea type="text" id="message" placeholder="Nachricht" formControlName="message" class="form-control"></textarea>
+            <div class="help-block" [hidden]="!submitted || !contactForm.controls['message'].errors">Bitte geben Sie eine Nachricht ein (min. 3 Zeichen)</div>
+          </div>
+        </div>
 
-    </fieldset>
-
+        <button class="btn btn-white m-t-md m-b-md" type="submit">Senden</button>
   </form>
 </div>
 

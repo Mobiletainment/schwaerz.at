@@ -1,6 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, NgForm, ReactiveFormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -23,6 +23,7 @@ import { AgePipe } from './age.pipe';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpModule,
     AppRoutingModule
   ],
@@ -30,7 +31,7 @@ import { AgePipe } from './age.pipe';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [ContactService],
+  providers: [ContactService, NgForm],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

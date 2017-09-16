@@ -1,5 +1,5 @@
-import { Component, OnInit } from "@angular/core";
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { Component, Input, OnInit } from "@angular/core";
+import { FormGroup, FormBuilder, Validators, NgForm } from "@angular/forms";
 import { Contact } from "./contact";
 import { ContactService } from "./contact.service";
 
@@ -8,27 +8,26 @@ import { ContactService } from "./contact.service";
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
 
-  contactForm: FormGroup;
+  contactForm: FormGroup = this.fb.group({
+    name: "",
+    email: ["", [Validators.email, Validators.required]],
+    message: ["", [Validators.required, Validators.minLength(3)]],
+  });
+
+  form: NgForm;
   contact: Contact = new Contact();
 
   submitted: boolean = false;
   result: null | boolean = null;
 
+
   constructor(private fb: FormBuilder, private contactService: ContactService) {
   }
 
-  ngOnInit() {
 
-    this.contactForm = this.fb.group({
-      name: "",
-      email: ["", Validators.email],
-      message: ["", [Validators.required, Validators.minLength(3)]],
-    });
-  }
-
-  send() {
+  send(form: NgForm) {
     this.submitted = true;
 
     if (!this.contactForm.valid)
