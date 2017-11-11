@@ -13,12 +13,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
+    AgePipe,
     AppComponent,
     HomeComponent,
     PageNotFoundComponent,
     ImprintComponent,
-    ContactComponent,
-    AgePipe
+    ContactComponent
   ],
   imports: [
     BrowserModule,

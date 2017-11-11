@@ -7,7 +7,7 @@ describe('schwaerz.at App', () => {
     page = new SchwaerzAtPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display brand', () => {
     page.navigateTo();
     expect(page.getBrand()).toBeDefined();
   });
