@@ -3,12 +3,12 @@
 ## What is it?
 A minimalistic website built with Angular using the [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0-beta.0 and [Angular 5](https://github.com/angular/angular).
 
-**It provides**:
-* basic routing
-* styling
-* welcome page
-* contact form with mail delivery.
-* imprint
+## What you get?
+* Routing
+* Styling
+* Welcome page
+* Contact form with e-mail delivery
+* Imprint
 
 It can be used as a boilerplate to jump-start other websites, or as a fast and minimalistic web presence (as demonstrated by this example).
 
@@ -19,7 +19,9 @@ It can be used as a boilerplate to jump-start other websites, or as a fast and m
 * smaller bundle sizes through build optimizer and AOT compilation
 * removing potentially superfluous whitespace characters via preserverWhiteSpaces component option
 * Improved [Lighthouse](https://github.com/GoogleChrome/lighthouse) performance metric from 80 to 83 (using Chrome Canary 64)
-* Improved PageSpeed Score from 92% to 93% and YSlow Score from 79% to 82% ![PageSpeed & YSlow Benchmark](/docs/1.1.0-Benchmark-PageSpeed-YSlow.png?raw=true "PageSpeed & YSlow Benchmark")
+* Improved PageSpeed Score from 92% to 93% and YSlow Score from 79% to 82%
+![PageSpeed & YSlow Benchmark](/docs/1.1.0-Benchmark-PageSpeed-YSlow.png?raw=true "PageSpeed & YSlow Benchmark")
+
 
 ### 1.0.1 (2017-09-16)
 * update to Angular CLI 1.4.2 and Angular 4.2.4
@@ -46,6 +48,5 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
-------------
-* Contact the author at david@pertiller.net
-* Have a look at the author's website at [https://www.pertiller.net](https://www.pertiller.net).
+
+* Contact the author at [https://www.pertiller.net](https://www.pertiller.net) or write an e-mail to david@pertiller.net.
