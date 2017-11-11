@@ -1,7 +1,7 @@
-import { Component } from "@angular/core";
-import { FormGroup, FormBuilder, Validators, NgForm } from "@angular/forms";
-import { Contact } from "./contact";
-import { ContactService } from "./contact.service";
+import { Component } from '@angular/core';
+import { FormGroup, FormBuilder, Validators, NgForm } from '@angular/forms';
+import { Contact } from './contact';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,15 +12,15 @@ import { ContactService } from "./contact.service";
 export class ContactComponent {
 
   contactForm: FormGroup = this.fb.group({
-    name: "",
-    email: ["", [Validators.email, Validators.required]],
-    message: ["", [Validators.required, Validators.minLength(3)]],
+    name: '',
+    email: ['', [Validators.email, Validators.required]],
+    message: ['', [Validators.required, Validators.minLength(3)]],
   });
 
   form: NgForm;
   contact: Contact = new Contact();
 
-  submitted: boolean = false;
+  submitted = false;
   result: null | boolean = null;
 
 
@@ -31,8 +31,9 @@ export class ContactComponent {
   send(form: NgForm) {
     this.submitted = true;
 
-    if (!this.contactForm.valid)
+    if (!this.contactForm.valid) {
       return;
+    }
 
     this.contact = {...this.contactForm.value}; // apply form model to contact model
 
