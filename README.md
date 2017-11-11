@@ -1,35 +1,51 @@
 # Schwaerz.At
 
 ## What is it?
-A minimalistic website built with Angular using the [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+A minimalistic website built with Angular using the [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0-beta.0 and [Angular 5](https://github.com/angular/angular).
 
-It provides basic routing, a welcome page, imprint and a contact form with mail delivery.
+**It provides**:
+* basic routing
+* styling
+* welcome page
+* contact form with mail delivery.
+* imprint
 
-Can be used as a boilerplate for other websites, or as a minimalistic web presence (demonstrated by example).
+It can be used as a boilerplate to jump-start other websites, or as a fast and minimalistic web presence (as demonstrated by this example).
+
+## Changelog
+
+### 1.1.0 (2017-11-11)
+* update to Angular CLI 1.6.0-beta.0 and Angular 5.0.0
+* smaller bundle sizes through build optimizer and AOT compilation
+* removing potentially superfluous whitespace characters via preserverWhiteSpaces component option
+* Improved [Lighthouse](https://github.com/GoogleChrome/lighthouse) performance metric from 80 to 83 (using Chrome Canary 64)
+* Improved PageSpeed Score from 92% to 93% and YSlow Score from 79% to 82% ![PageSpeed & YSlow Benchmark](/docs/1.1.0-Benchmark-PageSpeed-YSlow.png?raw=true "PageSpeed & YSlow Benchmark")
+
+### 1.0.1 (2017-09-16)
+* update to Angular CLI 1.4.2 and Angular 4.2.4
+* update to npm 5, include package-lock.json
+* reorganization of SCSS styles
+
+### 1.0.0 (2017-05-21)
+* Fix reply-to incorrect when replying to message
+* convert newlines (\r\n) in email text to <br> when sending HTML formatted email
+* restyling
+
+### 0.0.1 (2017-05-10)
+* initial commit with Angular CLI 1.0.3 and Angular 4.0.0
+* Home Component, Contact Form, Imprint, Page not Found,
+* Styling, branding and logo
 
 ## Dev info:
-### Development server
-
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-### Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-### Running unit tests
-
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### Running end-to-end tests
-
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help
 ------------
 * Contact the author at david@pertiller.net
-* Have a look at the [author's website](https://www.pertiller.net)
+* Have a look at the author's website at [https://www.pertiller.net](https://www.pertiller.net).

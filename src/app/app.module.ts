@@ -1,7 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule, NgForm, ReactiveFormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
@@ -10,6 +9,7 @@ import { ImprintComponent } from "./imprint/imprint.component";
 import { ContactComponent } from "./contact/contact.component";
 import { ContactService } from "./contact/contact.service";
 import { AgePipe } from './age.pipe';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { AgePipe } from './age.pipe';
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   exports: [

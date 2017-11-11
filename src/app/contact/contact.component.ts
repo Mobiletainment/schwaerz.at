@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { FormGroup, FormBuilder, Validators, NgForm } from "@angular/forms";
 import { Contact } from "./contact";
 import { ContactService } from "./contact.service";
@@ -6,7 +6,8 @@ import { ContactService } from "./contact.service";
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  preserveWhitespaces: false
 })
 export class ContactComponent {
 
