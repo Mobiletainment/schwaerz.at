@@ -13,6 +13,8 @@ A minimalistic website built with Angular using the [Angular CLI](https://github
 It can be used as a boilerplate to jump-start other websites, or as a fast and minimalistic web presence (as demonstrated by this example).
 
 ## Changelog
+### 1.2.0 (2017-11-26)
+* update to Angular CLI 1.6.0-rc.0 and Angular 5.0.3
 
 ### 1.1.0 (2017-11-11)
 * update to Angular CLI 1.6.0-beta.0 and Angular 5.0.0
