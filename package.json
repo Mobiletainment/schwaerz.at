@@ -2,6 +2,8 @@
   "name": "schwaerz.at",
   "version": "1.1.0",
   "author": "David Pertiller",
+  "description": "A fast and minimalistic web presence example, built with Angular 5",
+  "homepage": "https://www.pertiller.tech",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

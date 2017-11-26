@@ -49,4 +49,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-* Contact the author at [https://www.pertiller.net](https://www.pertiller.net) or write an e-mail to david@pertiller.net.
+* Contact the author at [https://www.pertiller.tech](https://www.pertiller.tech) or write an e-mail to david@pertiller.tech.
