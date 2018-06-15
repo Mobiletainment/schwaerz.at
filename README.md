@@ -13,13 +13,17 @@ A minimalistic website built with Angular using the [Angular CLI](https://github
 It can be used as a boilerplate to jump-start other websites, or as a fast and minimalistic web presence (as demonstrated by this example).
 
 ## Changelog
+### 1.6.0 (2018-06-15)
+* update to Angular CLI 6, Angular 6 and RxJS 6
+* added Angular service worker
+
 ### 1.2.0 (2017-11-26)
 * update to Angular CLI 1.6.0-rc.0 and Angular 5.0.3
 
 ### 1.1.0 (2017-11-11)
 * update to Angular CLI 1.6.0-beta.0 and Angular 5.0.0
 * smaller bundle sizes through build optimizer and AOT compilation
-* removing potentially superfluous whitespace characters via preserverWhiteSpaces component option
+* removing potentially superfluous whitespace characters via preserveWhiteSpaces component option
 * Improved [Lighthouse](https://github.com/GoogleChrome/lighthouse) performance metric from 80 to 83 (using Chrome Canary 64)
 * Improved PageSpeed Score from 92% to 93% and YSlow Score from 79% to 82%
 ![PageSpeed & YSlow Benchmark](/docs/1.1.0-Benchmark-PageSpeed-YSlow.png?raw=true "PageSpeed & YSlow Benchmark")

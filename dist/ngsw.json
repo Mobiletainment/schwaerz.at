@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.b69985f85f88740a1fd6.js",
+        "/polyfills.837b75a2d85e7fa873b1.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.9814e920d32b4b674dde.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/favicon.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/Fritz_Schwärz_Moderation_in_Bergheim.jpg",
+        "/assets/img/background.jpg",
+        "/assets/img/logo.jpg",
+        "/assets/mail.php"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/favicon.png": "e25cb25b1f053c514cd1898fe1f3870388accf55",
+    "/assets/icons/icon-128x128.png": "748434135595d07abc1ae6dbabbcda4d4de09d91",
+    "/assets/icons/icon-144x144.png": "6fa8502b5a54e2ed5210fb096a5b5553f61b2b2a",
+    "/assets/icons/icon-152x152.png": "139459102cc3072299c981356dd319456f079f73",
+    "/assets/icons/icon-192x192.png": "595f7d8d65d4ee784ab6510bbadb6a890ee5c774",
+    "/assets/icons/icon-384x384.png": "9dc881dd8ddcee23edf617d5d313eabd49d21822",
+    "/assets/icons/icon-512x512.png": "35ec90fe4623d87fc1a22e8a34499b240ba01c99",
+    "/assets/icons/icon-72x72.png": "6d90f31b554381dd875e705e6e6cb0083519bd63",
+    "/assets/icons/icon-96x96.png": "32ee29ae0e5f61d1944982fcea5deff48ac484f7",
+    "/assets/img/Fritz_Schwärz_Moderation_in_Bergheim.jpg": "107db20d3a148712400ab769683d50de66d09d15",
+    "/assets/img/background.jpg": "b6366fd839472cab4223db932561bc5615546cbc",
+    "/assets/img/logo.jpg": "29b8b12e15cd7aa723a74273c0702bae250477f3",
+    "/assets/mail.php": "9ae7920e3230d1c3d62c92c79f7c9d2ad4b8c7fc",
+    "/favicon.ico": "965b57d1e6cc7c3761b6e6292d09b8c0d55154fd",
+    "/index.html": "86816b3b30484c4dde229d4ebb57b77d627eeef5",
+    "/main.b69985f85f88740a1fd6.js": "60fb6b21628f10422300d0700f39a0e52fa10370",
+    "/polyfills.837b75a2d85e7fa873b1.js": "697a14037be579ef4f1daca77f5a7f639d35d087",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.9814e920d32b4b674dde.css": "2718a226fee8d97e2f69236cf385bf79b06e1d5b"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
